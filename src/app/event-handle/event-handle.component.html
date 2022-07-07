@@ -1,0 +1,16 @@
+<div class="container mt-5">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" [(ngModel)]="name" placeholder="FirstName" (ngModelChange)="OnChangeName($event)" value="{{name}}">
+      <span style="color:red ;margin-left:2%; margin-top: 1.1%;" [style.display]="!error? 'none' :'inline' ">please enter FirstName</span>
+      <select [(ngModel)]="selectedvalue" name="selectedvalue" class="select">
+        <option  value="India">India</option>
+        <option  value="China">China</option>
+        <option  value="Australia">Australia</option>
+        <option  value="Japan">Japan</option>
+        <option  value="Other">Other</option>
+    </select>
+      <button class="btn btn-success" (click)="submit()">Submit</button>
+    </div>
+  </div>
+
+  
