@@ -23,7 +23,7 @@ export class EventHandleComponent implements OnInit {
   }
 
   submit(){
-    if(!this.error)
+    if(!this.error && this.name.trim().length!=0)
     alert("Form submitted!")
   }
 }
